@@ -1,0 +1,28 @@
+.w{
+    font-size: 50px;
+    color: purple;
+    border: solid 2px red;
+}
+.n{
+    border-left: solid 5px red;
+}
+.b{
+    border-top: solid 9px red;
+}
+.v{
+    border-bottom: solid 6px red;
+}
+.c{
+    border-right: solid 5px red;
+}
+.x{
+    text-decoration: underline wavy;
+}
+.z{
+    background-color: red;
+    color: green;
+}
+.z:hover{
+    background-color: yellowgreen;
+    color: brown;
+}

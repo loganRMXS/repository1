@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    width: 100px;
+    height: 100px;
+    background: rgb(25, 0, 255);
+    border-radius: 10%;
+    border: 2px solid rgb(96, 231, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: verdana;
+    float: left;
+    margin: 30px;
+    text-shadow: 1px 1px black;
+    box-shadow: 0px 0px 72px -9px rgba(26, 53, 255, 0.75);
+}
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="counter" data-speed="1000">1030</div>
+        <div class="counter" data-speed="1000">1000</div>
+    </div>
+
+    <div data-aos="fade-up">Gafsgcv ahva Vuvybd wvhvbcsucvbWJKCBVUIWEQVGB</div>
+
+
+   
+        <script src="materialize/js/jquery.js"></script>
+        <script src="materialize/js/materialize.js"></script>
+
+
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+          
+        <script>
+            (() => {
+    const counter = document.querySelectorAll('.counter');
+    // covert to array
+    const array = Array.from(counter);
+    // select array element
+    array.map((item) => {
+        // data layer
+        let counterInnerText = item.textContent;
+
+        let count = 1;
+        let speed = item.dataset.speed / counterInnerText
+        function counterUp() {
+            item.textContent = count++
+            if (counterInnerText < count) {
+                clearInterval(stop);
+            }
+        }
+        const stop = setInterval(() => {
+            counterUp();
+        }, speed);
+    })
+})()
+
+        </script>
+       
+</body>
+</html>

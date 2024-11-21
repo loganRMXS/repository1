@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+</head>
+<style>
+    body{
+        background-color: gainsboro;
+    }
+    .head{
+        font-family: cursive; color: blue; font-weight: 600; text-align: center;
+    }
+    .login-section{
+        text-align: center; background-color: white;
+    }
+    .login-section form input{
+        width: 80%; padding: 2%;
+        border-radius: 0.5pc;
+        border: gray 1px solid;
+    }
+    .login-section form input::placeholder{
+        color: gray;
+    }
+    .login-section form input:hover{
+        border: blue 1px solid;
+    }
+    .button{
+        background-color: blue;
+        color: white;
+        width: 80%;
+        padding: 2%;
+        border-radius: 0.5pc;
+        border: none;
+    }
+    .card{
+       padding: 2%;
+       border-radius: 2pc;
+    }
+    .heading{
+        font-weight: bold;
+    }
+    .under{
+        color: gray;
+        font-weight: bold;
+    }
+    .f-name{
+        width: 100%;
+        padding: 2%;
+        border-radius: 0.5pc;
+        border: 1px solid gray;
+    }
+    .p{
+        text-align: left;
+    }
+    .l-name{
+        padding: 2%;
+        border-radius: 0.2pc;
+        width: 100%;
+        border: gray 1px solid;
+    }
+    .signup{
+        background-color: green;
+        color: white;
+        padding: 1%;
+        width: 40%;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 0.5pc;    
+        border: none; 
+    }
+    .male{
+        border: 1px solid gray;
+    }
+    .modal-footer{
+        text-align: center;
+    }
+   
+</style>
+<body><br><br>
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+    <h3 class="head">facebook</h3>
+    <div class="row">
+        <div class="col l4"></div>
+        <div class="col l4">
+    <div class="card">
+        <div class="login-section">
+            <h5>Log in to Facebook</h5><br>
+                <form action="">
+                    <input type="txt" placeholder="Email Address or Phone Number"><br><br>
+                    <input type="txt" placeholder="Password">
+                </form><br>
+                <button class="button">Log In</button><br><br> 
+                <a href="">Forgotten account?</a><br>
+                <a href="" class="second-option">or</a><br>
+                 <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">CREATE NEW ACCOUNT</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="card">
+    <div class="modal-content">
+      <h4 class="heading">Create a new account</h4>
+      <h6 class="under">Its quick and easy</h6><br>
+      <hr><br>
+      <p>
+        <div class="row">
+            <div class="col l6">
+                <input type="txt" placeholder="First Name" class="f-name">
+            </div>
+      <div class="col l6">
+        <input type="txt" name="" id="" placeholder="Surname" class="f-name">
+      </div>
+    </div><br>
+        <div class="input-field col s12 l4">
+            <select>
+              <option value="" disabled selected>Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+            </select>
+            <label>Date of Birth</label>
+          </div>
+          <div class="input-field col s12 l4">
+            <select>
+              <option value="" disabled selected>Month</option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <label></label>
+          </div>
+          <div class="input-field col s12 l4">
+            <select>
+              <option value="" disabled selected>Year</option>
+              <option value="1">2021</option>
+              <option value="2">2022</option>
+              <option value="3">2023</option>
+              <option value="4">2024</option>
+            </select>
+            <label></label>
+          </div><br>
+
+          <p>
+            <label for="">Gender</label><br>
+            <div class="row">
+                <div class="col l4">
+            <div class="male">
+            
+                <input name="group1" type="radio" checked />
+                <span>Male</span>
+         
+        </div>
+    </div>
+    <div class="col l4">
+          <div class="male">
+              
+              <input name="group1" type="radio" />
+              <span>Female</span>
+           
+        </div>
+    </div>
+    <div class="col l4">
+            <div class="male">
+                
+                <input name="group1" type="radio" checked />
+                <span>Custom</span>
+                 
+            </div>
+        </div>    
+        </div>
+          </p>
+        
+
+
+        <input type="txt" placeholder="Mobile Number or Email Address" class="l-name"><br><br>
+        <input type="txt" placeholder="New Password" class="l-name"><br><br>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo beatae reprehenderit nesciunt fugit necessitatibus harum vitae omnis officia minus ea.</p>
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo beatae reprehenderit nesciunt fugit necessitatibus harum vitae omnis officia minus ea vevwe wev.</p><br>
+        
+      </p>
+    
+    </div>
+    <div class="center">
+        <button class="signup">SIGN UP</button><br>
+        <a href="">Already have an account</a>
+    </div>
+</div>
+  </div>
+        </div><br>
+</div>
+</div>
+<div class="col l4"></div>
+</div>
+
+
+   
+
+
+<script src="materialize/js/jquery.js"></script>
+<script src="materialize/js/materialize.js"></script>
+    <script>
+         $(document).ready(function(){
+    $('.modal').modal();
+  });
+    </script>
+    <script>
+         $(document).ready(function(){
+    $('select').formSelect();
+  });
+    </script>
+</body>
+</html>

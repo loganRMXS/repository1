@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<body>
+    <!-- <nav>
+        <div class="container">
+        <ul class="right hide-on-small-only">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+        <ul class="sidenav" id="slide-out">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="Saved Pictures/d29bb479-41a5-412a-b267-479461dac995.jpg" alt="" width="100%">
+                    </div>
+                        <a href="#user"><img src="Saved Pictures/Best ever.jpeg" alt="" class="circle"></a>
+                        <a href="#name"><span class="white-text name">RONALDO THE GOAT</span></a>
+                        <a href="#email"><span class="white-text email">nwogadavid90@gmail.com</span></a>
+                </div></li>
+            <li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </li>
+        </ul>
+        
+    </div>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </nav> -->
+
+    <nav>
+        <ul></ul>
+    </nav>
+
+    <div class="carousel">
+        <a href="#one!" class="carousel-item"><img src="Saved Pictures/Best ever.jpeg" alt="" width="100%"></a>
+        <a href="#two!" class="carousel-item"><img src="Saved Pictures/Ariana grande (1).jpeg" alt="" width="100%"></a>
+        <a href="#three!" class="carousel-item"><img src="Saved Pictures/cd9396134446d269583bac7a11e11576.jpg" alt="" width="100%"></a>
+        <a href="#four!" class="carousel-item"><img src="Saved Pictures/25e84d28-a29a-4caf-bdf7-423c26dea624.jpeg" alt="" width="100%"></a>
+        <a href="#five!" class="carousel-item"><img src="Saved Pictures/a9aa21cb288e9f47648c5b2fb1ea8602.jpg" alt="" width="100%"></a>
+    </div>
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">
+                Cristiano Ronaldo
+            </div>
+            <div class="collapsible-body">
+                <span>I work at gateway computers that destroy my brain cells</span>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header">
+                <span>Messi is assss</span>
+            </div>
+            <div class="collapsible-body">
+                <span>I feel goooood</span>
+            </div>
+        </li>
+    </ul>
+    
+    <script src="materialize/js/jquery.js"></script>
+    <script src="materialize/js/materialize.js"></script>
+    <script> 
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('sidenav').sidenav();
+        });
+    </script>
+    <script> 
+        $(document).ready(function(){
+            $('.collapsible').collapsible();
+        });
+    </script>
+</body>
+</html>
